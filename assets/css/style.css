@@ -127,10 +127,11 @@
 }
 
 .home-image {
-  width: 20rem;
+  width: auto;
+  height: 20rem;
   border: 2px solid var(--color-stone-800);
   border-radius: 4%;
-  margin: 12rem;
+  margin: 14rem;
 }
 
 .about-box {
@@ -189,7 +190,32 @@
 }
 
 .projects-box {
+  display: flex;
   background-color: var(--color-stone-400);
+}
+
+.projects-info {
+  width: 20rem;
+  margin: 10rem;
+}
+
+.projects-info h4 {
+  color: var(--color-stone-100);
+}
+
+.projects-info h3 {
+  color: var(--color-stone-100);
+}
+
+.my-projects {
+  display: flex;
+}
+
+.project {
+  color: var(--color-stone-100);
+  border: 2px solid var(--color-stone-500);
+  border-radius: 2%;
+  margin: 2rem;
 }
 
 /* Footer */
