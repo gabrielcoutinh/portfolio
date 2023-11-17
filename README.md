@@ -3,5 +3,5 @@ An aggregator with my main projects.
 
 # Future Features
 
-- Correção Otimização do layout.
-- Rebalancear cores e tonalidades.
+- Correção e Otimização do layout.
+- Rebalanceamento das: cores, tonalidades e fontes.
