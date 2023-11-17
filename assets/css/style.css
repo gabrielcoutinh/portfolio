@@ -30,7 +30,7 @@
 .navbar {
   height: 100px;
   width: 100%;
-  background-color: var(--color-stone-950);
+  background-color: var(--color-stone-900);
   display: flex;
   justify-content: space-between;
 }
@@ -65,12 +65,88 @@
 
 /* Main */
 
+.home-box {
+  background-color: var(--color-stone-600);
+  display: flex;
+}
+
+.home-info {
+  width: 36rem;
+  margin: 14rem;
+}
+
+.home-info h4 {
+  color: var(--color-stone-50);
+  margin-top: 4px;
+  font-size: 1.5rem;
+}
+
+.home-info h3 {
+  color: var(--color-stone-50);
+  margin-top: 4px;
+  font-size: 2.5rem;
+}
+
+.home-info p {
+  color: var(--color-stone-100);
+  margin-top: 4px;
+  font-size: 1.25rem;
+}
+
+.home-info a {
+  color: var(--color-stone-300);
+  padding: 6px;
+  margin: 6px;
+  font-size: 1rem;
+  text-decoration: none;
+  font-style: none;
+  transition: all 0.6s;
+}
+
+.home-info a:hover {
+  opacity: 0.4;
+}
+
+.home-info button {
+  background-color: transparent;
+  border: 2px solid var(--color-stone-700);
+  border-radius: 4%;
+  font-size: 1.25rem;
+  padding: 6px;
+  margin: 4px;
+  color: var(--color-stone-300);
+  cursor: pointer;
+}
+
+.home-info button a {
+  transition: all 0.6s;
+}
+
+.home-info button a:hover {
+  opacity: 0.4;
+}
+
+.home-image {
+  width: 22rem;
+  border: 2px solid var(--color-stone-800);
+  border-radius: 4%;
+  margin: 12rem;
+}
+
+.about-box {
+  background-color: var(--color-stone-500);
+}
+
+.projects-box {
+  background-color: var(--color-stone-400);
+}
+
 /* Footer */
 
 footer {
   height: 60px;
   width: 100%;
-  background-color: var(--color-stone-950);
+  background-color: var(--color-stone-900);
   display: flex;
   justify-content: space-between;
 }
