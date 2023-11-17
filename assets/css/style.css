@@ -127,7 +127,7 @@
 }
 
 .home-image {
-  width: 22rem;
+  width: 20rem;
   border: 2px solid var(--color-stone-800);
   border-radius: 4%;
   margin: 12rem;
@@ -135,6 +135,57 @@
 
 .about-box {
   background-color: var(--color-stone-500);
+  display: flex;
+}
+
+.about-info {
+  width: 40rem;
+  margin: 10rem;
+}
+
+.about-tech-stack {
+  width: 40rem;
+  margin-top: 10rem;
+}
+
+.about-tech-stack h4 {
+  color: var(--color-stone-100);
+  padding-top: 2rem;
+  padding-left: 7rem;
+  font-size: 1.5rem;
+  margin: 2px;
+}
+
+.about-info h4 {
+  color: var(--color-stone-100);
+  font-size: 1.5rem;
+  margin: 2px;
+}
+
+.about-info h3 {
+  color: var(--color-stone-100);
+  font-size: 2rem;
+  margin: 2px;
+}
+
+.about-info p {
+  color: var(--color-stone-100);
+  font-size: 1.5rem;
+  margin: 2px;
+}
+
+.about-tech-stack ul {
+  display: flex;
+  padding-top: 2rem;
+  margin-left: 6rem;
+}
+
+.about-tech-stack li {
+  color: var(--color-stone-100);
+  margin-left: 2rem;
+  text-decoration: none;
+  list-style: none;
+  font-size: 1.5rem;
 }
 
 .projects-box {
