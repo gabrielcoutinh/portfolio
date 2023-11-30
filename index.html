@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./src/img/portfolio-fav.png"
+      type="image/x-icon"
+    />
     <title>Gabriel Coutinho | Portfolio</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -17,10 +22,10 @@
     <link rel="stylesheet" href="./src/css/index.css" />
   </head>
   <body>
-    <header>
+    <header class="container" id="header">
       <div class="container">
         <nav class="navbar navbar-expand-lg">
-          <a class="navbar-brand" href="#"
+          <a class="navbar-brand" href="./index.html"
             ><i class="bi bi-code-slash fs-1"></i
           ></a>
           <button
@@ -35,12 +40,12 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div
-            class="collapse navbar-collapse justify-content-center"
+            class="collapse navbar-collapse justify-content-end"
             id="navbarNav"
           >
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active fs-1" aria-current="page" href="#home"
+                <a class="nav-link fs-1" aria-current="page" href="#home"
                   >Home</a
                 >
               </li>
@@ -51,7 +56,7 @@
                 <a class="nav-link fs-1" href="#projects">Projects</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fs-1" href="#about">Contact</a>
+                <a class="nav-link fs-1" href="#contact">Contact</a>
               </li>
               <div class="d-grid gap-2 d-md-block"></div>
             </ul>
@@ -59,63 +64,93 @@
         </nav>
       </div>
     </header>
-    <main>
-      <div class="container" id="home">
-        <div align="center">
-          <h3 class="display-3">Gabriel Coutinho</h3>
-          <img src="./src/img/Line.png" />
-          <p class="lead text-center w-25">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
-            praesentium dolores repellendus error, dolore, voluptate sunt hic
-            necessitatibus optio facilis obcaecati odio. Commodi quia doloribus
-            cupiditate blanditiis vero officiis omnis.
-          </p>
-        </div>
-        <div class="d-grid gap-2 d-md-block" align="center">
-          <button class="btn btn-primary bg-white border-black" type="button">
-            <a class="link text-black" href="#"
-              ><i class="bi bi-arrow-down-circle"></i> Download CV</a
-            >
-          </button>
-        </div>
-      </div>
-      <div class="container" id="about">
-        <div class="container" align="center">
-          <h4 class="display-4">About</h4>
-          <img src="./src/img/Line.png" />
-          <p class="lead text-center w-25">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
-            praesentium dolores repellendus error, dolore, voluptate sunt hic
-            necessitatibus optio facilis obcaecati odio. Commodi quia doloribus
-            cupiditate blanditiis vero officiis omnis.
-          </p>
-        </div>
-        <div class="card-body" align="center">
-          <a href="https://skillicons.dev">
-            <img
-              height="28em"
-              src="https://skillicons.dev/icons?i=nodejs,mongo,postgresql,react,javascript,typescript,bootstrap,sass,html,css"
-            />
-          </a>
-          <a href="https://skillicons.dev">
-            <img
-              height="28em"
-              src="https://skillicons.dev/icons?i=c,python,flask,git,github,md,linux,figma,vscode,docker,postman"
-            />
-          </a>
+    <main class="container">
+      <div class="container" id="home" align="center">
+        <div class="row row-cols-1 row-cols-md-2 g-4" class="content-box">
+          <div class="d-flex justify-content-center rounded">
+            <div class="border-white justify-content-center">
+              <img
+                src="https://avatars.githubusercontent.com/u/141591318?v=4"
+                class="card-img-top w-50 rounded"
+                alt="..."
+                id="profile-image"
+              />
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-white">
+              <div class="card-body" align="center">
+                <h3 class="display-3">Gabriel Coutinho</h3>
+                <img src="./src/img/Line.png" />
+                <p class="card-text text-center w-75">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+              </div>
+              <div class="card-body">
+                <div class="d-grid gap-2 d-md-block" align="center">
+                  <button
+                    class="btn btn-primary bg-white border-black"
+                    type="button"
+                  >
+                    <a class="link text-black" href="#"
+                      ><i class="bi bi-arrow-down-circle"></i> Download CV</a
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="container" id="projects" align="center">
-        <h4 class="display-4">Projects</h4>
-        <img src="./src/img/Line.png" />
+      <div class="container" id="about" align="center" class="content-box">
         <div class="row row-cols-1 row-cols-md-2 g-4">
           <div class="col">
+            <div class="card border-white">
+              <div class="card-body">
+                <h4 class="display-4">About</h4>
+                <img src="./src/img/Line.png" />
+                <p class="card-text text-center w-75">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <img
+                  class="tech-icons"
+                  height="26em"
+                  src="https://skillicons.dev/icons?i=nodejs,mongo,postgresql,react,javascript,typescript,bootstrap,sass,html,css"
+                />
+                <img
+                  class="tech-icons"
+                  height="26em"
+                  src="https://skillicons.dev/icons?i=c,python,flask,git,github,md,linux,figma,vscode,docker,postman"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center">
+            <div class="card justify-content-center border-white">
+              <img
+                src="./src/img/dev.svg"
+                class="card-img-center w-100 rounded"
+                alt="..."
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container" id="projects" align="center" class="content-box">
+        <h4 class="display-4">Projects</h4>
+        <img src="./src/img/Line.png" />
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+          <div class="col">
             <div class="card">
-              <img src="..." class="card-img-top" alt="..." />
+              <img src="./src/img/dev-2.svg" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <img src="./src/img/Line.png" />
-                <p class="card-text text-center w-25">
+                <p class="card-text text-center w-75">
                   This is a longer card with supporting text below as a natural
                   lead-in to additional content. This content is a little bit
                   longer.
@@ -124,28 +159,29 @@
               <div class="card-body">
                 <a href="https://skillicons.dev">
                   <img
-                    height="28em"
+                    class="tech-icons"
+                    height="26em"
                     src="https://skillicons.dev/icons?i=nodejs,react,javascript,typescript"
                   />
                 </a>
               </div>
               <div class="card-body">
                 <a href="#" class="card-link"
-                  ><i class="bi bi-github text-black"></i
+                  ><i class="bi bi-github text-black fs-4"></i
                 ></a>
                 <a href="#" class="card-link"
-                  ><i class="bi bi-link-45deg text-black"></i
+                  ><i class="bi bi-link-45deg text-black fs-4"></i
                 ></a>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card">
-              <img src="..." class="card-img-top" alt="..." />
+              <img src="./src/img/dev-2.svg" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <img src="./src/img/Line.png" />
-                <p class="card-text text-center w-25">
+                <p class="card-text text-center w-75">
                   This is a longer card with supporting text below as a natural
                   lead-in to additional content. This content is a little bit
                   longer.
@@ -154,126 +190,153 @@
               <div class="card-body">
                 <a href="https://skillicons.dev">
                   <img
-                    height="28em"
+                    class="tech-icons"
+                    height="26em"
                     src="https://skillicons.dev/icons?i=nodejs,react,javascript,typescript"
                   />
                 </a>
               </div>
               <div class="card-body">
                 <a href="#" class="card-link"
-                  ><i class="bi bi-github text-black"></i
+                  ><i class="bi bi-github text-black fs-4"></i
                 ></a>
                 <a href="#" class="card-link"
-                  ><i class="bi bi-link-45deg text-black"></i
+                  ><i class="bi bi-link-45deg text-black fs-4"></i
                 ></a>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card">
-              <img src="..." class="card-img-top" alt="..." />
+              <img src="./src/img/dev-2.svg" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <img src="./src/img/Line.png" />
-                <p class="card-text text-center w-25">
+                <p class="card-text text-center w-75">
                   This is a longer card with supporting text below as a natural
-                  lead-in to additional content.
+                  lead-in to additional content. This content is a little bit
+                  longer.
                 </p>
               </div>
               <div class="card-body">
                 <a href="https://skillicons.dev">
                   <img
-                    height="28em"
+                    class="tech-icons"
+                    height="26em"
                     src="https://skillicons.dev/icons?i=nodejs,react,javascript,typescript"
                   />
                 </a>
               </div>
               <div class="card-body">
                 <a href="#" class="card-link"
-                  ><i class="bi bi-github text-black"></i
+                  ><i class="bi bi-github text-black fs-4"></i
                 ></a>
                 <a href="#" class="card-link"
-                  ><i class="bi bi-link-45deg text-black"></i
+                  ><i class="bi bi-link-45deg text-black fs-4"></i
                 ></a>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card">
-              <img src="..." class="card-img-top" alt="..." />
+              <img src="./src/img/dev-2.svg" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <img src="./src/img/Line.png" />
-                <p class="card-text text-center w-25">
+                <p class="card-text text-center w-75">
                   This is a longer card with supporting text below as a natural
-                  lead-in to additional content.
+                  lead-in to additional content. This content is a little bit
+                  longer.
                 </p>
               </div>
               <div class="card-body">
                 <a href="https://skillicons.dev">
                   <img
-                    height="28em"
+                    class="tech-icons"
+                    height="26em"
                     src="https://skillicons.dev/icons?i=nodejs,react,javascript,typescript"
                   />
                 </a>
               </div>
               <div class="card-body">
                 <a href="#" class="card-link"
-                  ><i class="bi bi-github text-black"></i
+                  ><i class="bi bi-github text-black fs-4"></i
                 ></a>
                 <a href="#" class="card-link"
-                  ><i class="bi bi-link-45deg text-black"></i
+                  ><i class="bi bi-link-45deg text-black fs-4"></i
                 ></a>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="container" id="contact" align="center">
-        <h4 class="display-4">Contact</h4>
-        <img src="./src/img/Line.png" />
-        <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label">Name</label>
-          <input
-            type="text"
-            class="form-control"
-            id="exampleFormControlInput1"
-            placeholder="John Doe"
-          />
-        </div>
-        <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label"
-            >Email address</label
-          >
-          <input
-            type="email"
-            class="form-control"
-            id="exampleFormControlInput1"
-            placeholder="example@example.com"
-          />
-        </div>
-        <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label"
-            >Example textarea</label
-          >
-          <textarea
-            class="form-control"
-            id="exampleFormControlTextarea1"
-            rows="3"
-            placeholder="..."
-          ></textarea>
-        </div>
-        <div class="d-grid gap-2 d-md-block">
-          <button class="btn btn-primary bg-white border-black" type="button">
-            <a class="link text-black" href="#"
-              ><i class="bi bi-send"></i> Submit</a
-            >
-          </button>
+      <div class="container" id="contact" align="center" class="content-box">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="d-flex justify-content-center">
+            <div class="card justify-content-center border-white">
+              <img
+                src="./src/img/dev-3.svg"
+                class="card-img-center w-100 rounded"
+                alt="..."
+              />
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-white">
+              <div class="card-body">
+                <h4 class="display-4">Contact</h4>
+                <img src="./src/img/Line.png" />
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label"
+                    >Name</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="John Doe"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label"
+                    >Email address</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="example@example.com"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label"
+                    >Example textarea</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    rows="3"
+                    placeholder="..."
+                  ></textarea>
+                </div>
+                <div class="d-grid gap-2 d-md-block">
+                  <button
+                    class="btn btn-primary bg-white border-black"
+                    type="button"
+                  >
+                    <a class="link text-black" href="#"
+                      ><i class="bi bi-send"></i> Submit</a
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
-    <footer class="container">
-      <nav class="container">
+    <footer class="container" id="footer" align="center">
+      <div class="container" class="content-box">
         <ul class="nav justify-content-center">
           <li class="nav-item">
             <a class="nav-link fs-4" href="#"
@@ -291,7 +354,8 @@
             </a>
           </li>
         </ul>
-      </nav>
+        <p>Developed by: @gabrielcoutinh</p>
+      </div>
     </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
