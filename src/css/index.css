@@ -55,7 +55,7 @@
 
 #raiz,
 #raiz div {
-  background-color: lightslategrey;
+  background-color: lightgray;
   border: none;
 }
 
@@ -64,7 +64,7 @@
 #projects,
 #contact {
   padding: 2rem;
-  transition: all 0.8s;
+  transition: all 1s;
 }
 #home:hover,
 #about:hover,
@@ -87,4 +87,8 @@
 .card-link:hover {
   box-shadow: 10px 5px 5px black;
   border-radius: 4px;
+}
+
+h6 {
+  color: grey;
 }
