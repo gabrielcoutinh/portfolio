@@ -11,11 +11,6 @@
   text-decoration: none;
 }
 
-body {
-  background-color: white;
-  color: transparent;
-}
-
 #header,
 #footer {
   margin-top: 2rem;
@@ -42,7 +37,7 @@ body {
 .nav-link:hover,
 .bi:hover {
   opacity: 0.6;
-  box-shadow: 10px 5px 5px whitesmoke;
+  /* box-shadow: 10px 5px 5px; */
   border-radius: 4px;
 }
 
@@ -58,13 +53,13 @@ body {
   margin: 4px;
 }
 
-.content-box {
-  color: black;
-}
+/* body {
+  background-color: whitesmoke;
+} */
 
-#home,
+/* #home,
 #about,
 #projects,
 #contact {
-  box-shadow: 10px 5px 5px whitesmoke;
-}
+  box-shadow: 10px 5px 5px grey;
+} */
