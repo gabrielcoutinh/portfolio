@@ -12,8 +12,8 @@
 }
 
 body {
-  background-color: whitesmoke;
-  color: black;
+  background-color: white;
+  color: transparent;
 }
 
 #header,
@@ -42,6 +42,8 @@ body {
 .nav-link:hover,
 .bi:hover {
   opacity: 0.6;
+  box-shadow: 10px 5px 5px whitesmoke;
+  border-radius: 4px;
 }
 
 #profile-image {
@@ -58,4 +60,11 @@ body {
 
 .content-box {
   color: black;
+}
+
+#home,
+#about,
+#projects,
+#contact {
+  box-shadow: 10px 5px 5px whitesmoke;
 }
