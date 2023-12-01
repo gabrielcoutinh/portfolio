@@ -1,10 +1,9 @@
 # Portfolio
 
-An aggregator with my main projects.
+- An aggregator with my main projects.
 
-#
+# Future features
 
-- [ ] Add logica botao download
-- [ ] Add logica formulario
-- [ ] Add logica do botao send
-- [ ] Add links
+- [ ] Logica botao download.
+- [ ] formulario.
+- [ ] Add links.
