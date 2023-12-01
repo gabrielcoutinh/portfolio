@@ -270,53 +270,74 @@
             </div>
           </div>
           <div class="col">
-            <div class="card border-white">
+            <div class="card">
               <div class="card-body">
                 <h6 class="display-6">Let's talk?</h6>
                 <h4 class="display-4">Contact</h4>
-                <div class="mb-3">
-                  <label for="exampleFormControlInput1" class="form-label"
-                    >Name</label
-                  >
+                <form
+                  action="https://formsubmit.co/contact.gabriel.coutinho@gmail.com"
+                  method="POST"
+                >
                   <input
-                    type="text"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="John Doe"
+                    type="hidden"
+                    name="_next"
+                    value="http://localhost:5500/portfolio/thanks.html"
                   />
-                </div>
-                <div class="mb-3">
-                  <label for="exampleFormControlInput1" class="form-label"
-                    >Email address</label
-                  >
                   <input
-                    type="email"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="example@example.com"
+                    type="hidden"
+                    name="_autoresponse"
+                    value="I received your message, I will get back to you as soon as possible! Thanks for getting in touch and see you soon!"
                   />
-                </div>
-                <div class="mb-3" id="text-form">
-                  <label for="exampleFormControlTextarea1" class="form-label"
-                    >Your message</label
-                  >
-                  <textarea
-                    class="form-control"
-                    id="exampleFormControlTextarea1"
-                    rows="3"
-                    placeholder="..."
-                  ></textarea>
-                </div>
-                <div class="d-grid gap-2 d-md-block">
-                  <button
-                    class="btn btn-primary bg-white border-black"
-                    type="button"
-                  >
-                    <a class="text-black" href="#"
-                      ><i class="bi bi-send"></i> Submit</a
+                  <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input
+                      class="form-control"
+                      type="text"
+                      id="text"
+                      name="name"
+                      placeholder="John Doe"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label
+                      for="email"
+                      class="form-label"
+                      type="email"
+                      id="email"
+                      name="email"
+                      >Email address</label
                     >
-                  </button>
-                </div>
+                    <input
+                      type="email"
+                      name="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="example@example.com"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3" id="text-form">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea
+                      class="form-control"
+                      rows="2"
+                      id="message"
+                      name="message"
+                      placeholder="Your message"
+                      required
+                    ></textarea>
+                  </div>
+                  <div class="d-grid gap-2 d-md-block" align="center">
+                    <button
+                      class="btn btn-primary bg-white border-black"
+                      type="submit"
+                    >
+                      <i class="bi bi-send"></i>
+                      Submit
+                    </button>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
@@ -327,17 +348,22 @@
       <div class="container">
         <ul class="nav justify-content-center">
           <li class="nav-item">
-            <a class="nav-link fs-4" href="#"
+            <a class="nav-link fs-4" href="https://github.com/gabrielcoutinh"
               ><i class="bi bi-github text-black"></i
             ></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fs-4" href="#"
+            <a
+              class="nav-link fs-4"
+              href="https://www.linkedin.com/in/gabrielcoutinh/"
               ><i class="bi bi-linkedin text-black"></i
             ></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fs-4" href="#">
+            <a
+              class="nav-link fs-4"
+              href="mailto:contact.gabriel.coutinho@gmail.com"
+            >
               <i class="bi bi-envelope text-black"></i>
             </a>
           </li>
@@ -350,6 +376,5 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <script src="./src/js/index.js" defer></script>
   </body>
 </html>
