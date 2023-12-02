@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -7,57 +6,44 @@
   letter-spacing: 2px;
   font-family: "Mulish", sans-serif;
 }
-
-.btn a {
-  text-decoration: none;
-}
-
 #header,
 #footer {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-
 #home,
 #about,
 #projects,
 #contact {
   margin-top: 8rem;
 }
-
 #profile-image {
   border: 1px solid black;
   border-radius: 8px;
   width: 18rem;
 }
-
 .card-text {
   margin: 1.25rem;
 }
-
 .tech-icons {
   margin: 4px;
 }
-
 #text-form textarea,
 #contact input {
   border: 1px solid black;
   box-shadow: none;
 }
-
 #cards-box .card {
   margin-top: 1.5rem;
   padding: 1rem;
   border: 1px solid black;
   border-radius: 8px;
 }
-
 #raiz,
 #raiz div {
   background-color: lightgray;
   border: none;
 }
-
 #home,
 #about,
 #projects,
@@ -65,36 +51,48 @@
   padding: 2rem;
   transition: all 1s;
 }
-
-.btn,
-.link,
+a {
+  text-decoration: none;
+  color: black;
+}
+.down-button,
+.send-button {
+  background-color: darkgrey;
+  border: 1px solid black;
+  border-radius: 8px;
+  transition: all 0.6s;
+}
+.down-button:hover,
+.send-button:hover {
+  opacity: 0.6;
+}
+.form-label {
+  color: black;
+  width: 8rem;
+}
 .nav-link,
 .card-link {
   cursor: pointer;
   transition: all 0.6s;
   color: black;
 }
-
-.btn:hover,
-.link:hover,
 .nav-link:hover,
 .card-link:hover {
   opacity: 0.8;
   box-shadow: 0px 0.5px black;
 }
-
 h6 {
   color: #5c5c5c;
 }
-
+/* Thanks */
 #box-thanks {
+  min-width: 100vw;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: lightgray;
 }
-
 .box-content {
   display: flex;
   justify-content: center;
@@ -106,38 +104,31 @@ h6 {
   border: 1px solid black;
   border-radius: 8px;
 }
-
 .content {
   text-align: center;
   color: white;
 }
-
 .content h1,
 p,
 button {
   margin-top: 2rem;
 }
-
 .content h1 {
   font-size: 4rem;
 }
-
 .content a {
   text-decoration: none;
   color: white;
 }
-
 .container button {
   background-color: darkgray;
   border: 1px solid black;
   padding: 0.75rem;
   transition: all 0.6s;
 }
-
 .container button:hover {
   opacity: 0.6;
 }
-
 @media (max-width: 440px) {
   .box-content {
     width: 20rem;
