@@ -25,9 +25,13 @@
     <header class="container" id="header">
       <div class="container">
         <nav class="navbar navbar-expand-lg">
-          <a class="navbar-brand nav-link" href="./index.html"
-            ><i class="bi bi-code-slash fs-3"></i
-          ></a>
+          <div class="navbar-logo">
+            <button>
+              <a class="navbar-brand" href="./index.html">
+                <i class="bi bi-code-slash fs-3"></i>
+              </a>
+            </button>
+          </div>
           <button
             class="navbar-toggler"
             type="button"
@@ -96,24 +100,18 @@
           <div class="col">
             <div class="card border-white">
               <div class="card-body">
-                <h6 class="display-6">Como vou te ajudar?</h6>
+                <h6 class="display-6">Como eu posso ajudar?</h6>
                 <h4 class="display-4">Sobre</h4>
                 <p class="card-text text-center w-100">
-                  <p>• Apaixonado por tecnologia desde 2018. Gosto de aprender e de me atualizar sempre que posso.</p>
-                  <p>• Me considero comunicativo e acredito que o trabalho em equipe não só e necessário, como também é a melhor forma de obter resultados.</p>
-                  <p>• Como engenheiro de software busco constantemente me aprimorar e ficar a par das melhores praticas no desenvolvimento de software; pois acredito que antes das tecnologias usadas vem a solução.</p>
+                  Como engenheiro de software busco constantemente me aprimorar e ficar a par das melhores praticas no desenvolvimento de software; pois acredito que antes das tecnologias usadas vem a solução.
                 </p>
-                <img
-                  class="tech-icons"
-                  height="26em"
-                  src="https://skillicons.dev/icons?i=nodejs,mongo,postgresql,react,javascript,typescript,bootstrap,sass,html,css"
-                />
-                <img
-                  class="tech-icons"
-                  height="26em"
-                  src="https://skillicons.dev/icons?i=c,python,flask,git,github,md,linux,figma,vscode,docker,postman"
-                />
               </div>
+            </div>
+            <div class="card-body">
+                <img
+                  height="40em"
+                  src="https://skillicons.dev/icons?i=nodejs,mongo,postgresql,next,javascript,typescript,tailwindcss,sass,html,css,git,github,md,linux,figma,vscode,docker,postman"
+                />
             </div>
           </div>
           <div class="d-flex justify-content-center">
@@ -137,9 +135,7 @@
               <div class="card-body">
                 <h5 class="card-title">DigiVault</h5>
                 <p class="card-text text-center w-100">
-                  <p>• Este é um site institucional moderno para um banco digital.</p>
-                  <p>• Combinando "Digi" para digital e "Vault" para segurança, transmitindo segurança e digitalidade.</p>
-                </p>
+                  <p>Se trata de site institucional com atributos de uma landing page. Foi construído visando centralizar informações rápidas e servir como ponto de download do aplicativo em questão; um banco digital em faze de captação de clientes.</p>
               </div>
               <div class="card-body">
                 <img
@@ -153,78 +149,6 @@
                   ><i class="bi bi-github text-black fs-4"></i
                 ></a>
                 <a href="https://digivault-gbrcoutinho.vercel.app/" class="card-link"
-                  ><i class="bi bi-link-45deg text-black fs-4"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img src="./src/img/dev-2.svg" class="card-img-top" />
-              <div class="card-body">
-                <h5 class="card-title">Em desenvolvimento...</h5>
-                <p class="card-text text-center w-100">...</p>
-              </div>
-              <div class="card-body">
-                <img
-                  class="tech-icons"
-                  height="26em"
-                  src="https://skillicons.dev/icons?i=html,css,javascript"
-                />
-              </div>
-              <div class="card-body">
-                <a href="#" class="card-link"
-                  ><i class="bi bi-github text-black fs-4"></i
-                ></a>
-                <a href="#" class="card-link"
-                  ><i class="bi bi-link-45deg text-black fs-4"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img src="./src/img/dev-2.svg" class="card-img-top" />
-              <div class="card-body">
-                <h5 class="card-title">Em desenvolvimento...</h5>
-                <p class="card-text text-center w-100">...</p>
-              </div>
-              <div class="card-body">
-                <img
-                  class="tech-icons"
-                  height="26em"
-                  src="https://skillicons.dev/icons?i=html,css,javascript"
-                />
-              </div>
-              <div class="card-body">
-                <a href="#" class="card-link"
-                  ><i class="bi bi-github text-black fs-4"></i
-                ></a>
-                <a href="#" class="card-link"
-                  ><i class="bi bi-link-45deg text-black fs-4"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img src="./src/img/dev-2.svg" class="card-img-top" />
-              <div class="card-body">
-                <h5 class="card-title">Em desenvolvimento...</h5>
-                <p class="card-text text-center w-100">...</p>
-              </div>
-              <div class="card-body">
-                <img
-                  class="tech-icons"
-                  height="26em"
-                  src="https://skillicons.dev/icons?i=html,css,javascript"
-                />
-              </div>
-              <div class="card-body">
-                <a href="#" class="card-link"
-                  ><i class="bi bi-github text-black fs-4"></i
-                ></a>
-                <a href="#" class="card-link"
                   ><i class="bi bi-link-45deg text-black fs-4"></i
                 ></a>
               </div>
@@ -287,7 +211,7 @@
                       name="email"
                       class="form-control"
                       id="email"
-                      placeholder="example@example.com"
+                      placeholder="exemplo@exemplo.com"
                       required
                     />
                   </div>
@@ -298,7 +222,7 @@
                       rows="2"
                       id="message"
                       name="message"
-                      placeholder="Your message"
+                      placeholder="sua Menssagem"
                       required
                     ></textarea>
                   </div>
@@ -337,7 +261,7 @@
             </a>
           </li>
         </ul>
-        <p>Desenvolvido por: @gabrielcoutinh</p>
+        <p>@gabrielcoutinh</p>
       </div>
     </footer>
     <script

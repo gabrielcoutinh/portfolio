@@ -135,3 +135,19 @@ button {
     height: 20rem;
   }
 }
+
+#about img {
+  height: auto;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.nav-logo {
+  border: none;
+  background-color: transparent;
+}
+
+.navbar-logo button {
+  background: transparent;
+  border: none;
+}
